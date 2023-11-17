@@ -1,0 +1,144 @@
+.advantages__section {
+  padding: 40px 0;
+}
+.advantages__title {
+  color: var(--black);
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.advantages__card_block {
+  display: flex;
+  gap: 15px;
+}
+.advantages__card {
+  border-radius: 16px;
+  background: linear-gradient(180deg, #fe94a6 0.04%, #f2f2f2 65.84%);
+  padding: 24px 8px 32px 8px;
+  text-align: center;
+  gap: 25px;
+  margin-bottom: 0;
+  &::before {
+    content: "";
+    width: 160px;
+    height: 160px;
+    background-image: url(../img/discount-icon.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+  }
+}
+
+.second {
+  border-radius: 16px;
+  background: linear-gradient(180deg, #e685ff 0.04%, #f2f2f2 65.84%);
+  &::before {
+    content: "";
+    width: 160px;
+    height: 160px;
+    background-image: url(../img/delivery-icon.png);
+    display: inline-block;
+  }
+}
+.third {
+  border-radius: 16px;
+  background: linear-gradient(180deg, #7de9ff 0.04%, #f2f2f2 65.84%);
+  &::before {
+    content: "";
+    width: 160px;
+    height: 160px;
+    background-image: url(../img/card-wallet-icon.png);
+    display: inline-block;
+  }
+}
+.fourth {
+  border-radius: 16px;
+  background: linear-gradient(180deg, #ffe685 0.04%, #f6f6f6 65.84%);
+  &::before {
+    content: "";
+    width: 160px;
+    height: 160px;
+    background-image: url(../img/bank-icon.png);
+    display: inline-block;
+  }
+}
+.fifth {
+  border-radius: 16px;
+  background: linear-gradient(180deg, #adffc1 0.04%, #f2f2f2 65.84%), #f2f2f2;
+  &::before {
+    content: "";
+    width: 160px;
+    height: 160px;
+    background-image: url(../img/approval-icon.png);
+    display: inline-block;
+  }
+}
+.advantages__card_title {
+  color: var(--black);
+  font-size: 24px;
+  font-weight: 700;
+}
+.advantages__card_text {
+  color: var(--davyGrey);
+  font-size: 16px;
+  font-weight: 400;
+}
+.advantages__card_btn {
+  color: var(--prime);
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid var(--prime);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: inline-block;
+  margin-top: 100px;
+}
+@media screen and (max-width: 1000px) {
+  .advantages__card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    background: #f9f9f9;
+    &::before {
+      width: 110px;
+      height: 64px;
+      background-image: url(../img/discount-tablet-icon.png);
+      display: block;
+    }
+  }
+  .advantages__card_block {
+    flex-direction: column;
+  }
+  .advantages__card_texts {
+    text-align: left;
+  }
+  .advantages__card_btn {
+    max-width: 212px;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 725px) {
+  .advantages__card_btn {
+    display: none;
+  }
+  .advantages__card_title {
+    margin-bottom: 12px;
+    &::before {
+      content: "";
+      width: 32px;
+      height: 32px;
+      background-image: url(../img/discount-mobile.png);
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .advantages__card {
+    &::before {
+      display: none;
+    }
+  }
+}

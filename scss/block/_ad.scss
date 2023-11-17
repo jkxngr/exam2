@@ -1,0 +1,76 @@
+.iphone__ad_section {
+  background: #000;
+}
+.iphone__ad_block {
+  display: flex;
+  gap: 88px;
+  align-items: center;
+  padding-top: 31px;
+}
+
+.iphone_ad__title {
+  color: #fff;
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.iphone_ad__text {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+.iphone_ad__btn {
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 20px 40px;
+  border-radius: 8px;
+  background: var(--prime);
+}
+.iphone__ad_img {
+  width: 236px;
+  height: 330px;
+}
+.iphone__tablet {
+  display: none;
+  width: 106px;
+  height: 203px;
+}
+.iphone__mobile {
+  display: none;
+  width: 64px;
+  height: 143px;
+}
+@media screen and (max-width: 830px) {
+  .iphone_ad__title {
+    font-size: 32px;
+  }
+  .iphone_ad__text {
+    font-size: 16px;
+  }
+  .iphone__ad_img {
+    display: none;
+  }
+  .iphone__tablet {
+    display: block;
+  }
+  .iphone__mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 645px) {
+  .iphone_ad__title {
+    font-size: 20px;
+  }
+  .iphone__ad_img {
+    display: none;
+  }
+  .iphone__tablet {
+    display: none;
+  }
+  .iphone__mobile {
+    display: block;
+  }
+}

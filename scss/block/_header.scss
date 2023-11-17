@@ -1,0 +1,344 @@
+.header_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.header_top__text_block {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.header_top__social_media_block {
+  display: flex;
+  gap: 8px;
+}
+.header_top__text {
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 400;
+}
+.header_top__btn {
+  color: var(--prime);
+  font-size: 16px;
+  font-weight: 400;
+  background-color: transparent;
+  &::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url(../img/header-top-btn-icon.svg);
+    vertical-align: middle;
+    margin-left: 4px;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+.header__form {
+  flex-grow: 1;
+  position: relative;
+  display: none;
+  &::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/header_moible_search-icon.svg);
+    position: absolute;
+    left: 24px;
+    top: 25%;
+    vertical-align: middle;
+  }
+}
+.header__input {
+  max-width: 594px;
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--silver);
+  background: transparent;
+  padding-left: 56px;
+}
+.header__logo {
+  max-width: 40px;
+  margin-right: 36px;
+}
+.header_list {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+@media screen and (max-width: 1240px) {
+  .header_list {
+    display: none;
+  }
+  .header__number_div {
+    margin-top: -20px;
+  }
+  .header {
+    justify-content: space-between;
+    padding: 5px 0;
+  }
+}
+
+.header__link {
+  color: var(--black);
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 3px;
+  &:hover {
+    color: var(--prime, #0071e4);
+    border-bottom: 2px solid var(--prime);
+  }
+}
+.header__link_aksii {
+  border-radius: 8px;
+  background: #fdefbf;
+  padding: 3px 8px;
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url("../img/header-fire.svg");
+    vertical-align: middle;
+    margin-right: 4px;
+  }
+}
+.header__number_div {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  margin-left: 25px;
+}
+.header_btns_block {
+  display: flex;
+  gap: 32px;
+}
+.header_search_btn {
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/header-search-btn.svg);
+  display: none;
+  background-color: transparent;
+}
+.header_phone_btn {
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/header-phone.svg);
+  display: none;
+  background-color: transparent;
+}
+.header_dots_btn {
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/header-dots.svg);
+  display: none;
+  background-color: transparent;
+}
+.header__link_number {
+  color: var(--black);
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+  &::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url(../img/header-phone-logo.svg);
+    vertical-align: middle;
+  }
+}
+.header__link_recall {
+  color: var(--black);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--prime);
+  font-size: 16px;
+  font-weight: 400;
+}
+.header__middle {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  padding: 22px 0;
+}
+.header__middle_button {
+  padding: 16px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 16px;
+  background: var(--prime);
+  display: flex;
+  align-items: center;
+  &::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background-image: url("../img/header-middle-button.svg");
+  }
+}
+.header_middle_form {
+  flex-grow: 1;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/header-middle-search.svg);
+    position: absolute;
+    left: 24px;
+    top: 25%;
+    vertical-align: middle;
+  }
+}
+.header_middle__icon_img {
+  max-width: 40px;
+}
+.header__middle_input {
+  max-width: 594px;
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--silver);
+  background: transparent;
+  padding-left: 56px;
+}
+.header_middle__button {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 16px;
+  background: #52d116;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/header-middle-btn-icon.svg);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+  }
+  &::after {
+    content: "1";
+    width: 34px;
+    height: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 32px;
+    padding: 4px 12px;
+    margin-left: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  }
+}
+@media screen and (max-width: 900px) {
+  .header_middle__button {
+    display: none;
+  }
+}
+.header_bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.header_bottom_list {
+  display: flex;
+  gap: 20px;
+}
+.header_bottom_item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  &:hover > p {
+    color: var(--prime);
+  }
+  &:hover > svg > path {
+    fill: var(--prime);
+  }
+}
+.iphone_14promax_btn {
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px 59px 20px 66px;
+  border-radius: 8px;
+  background-image: linear-gradient(90deg, #000 22.19%, #5e556b 100%);
+  // background-image: url(/img/iphone.svg);
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 63px;
+    background-image: url(../img/iphone.svg);
+    background-repeat: no-repeat;
+    left: 5px;
+    top: 0;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/right_arrow.svg);
+    background-repeat: no-repeat;
+    right: 16px;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .iphone_14promax_btn {
+    display: none;
+  }
+  .header_bottom {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 790px) {
+  .header_bottom_list,
+  .header__middle_button,
+  .header_middle__icon_img,
+  .header_top,
+  .header_middle_form,
+  .header__link_recall {
+    display: none;
+  }
+  .header__form {
+    display: inline-block;
+  }
+  .header_dots_btn {
+    display: inline-block;
+    margin-left: 24px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .header__form {
+    display: none;
+  }
+  .header__number_div {
+    display: none;
+  }
+  .header_search_btn {
+    display: inline-block;
+  }
+  .header_phone_btn {
+    display: inline-block;
+  }
+  .header_dots_btn {
+    margin-left: 0;
+  }
+}
